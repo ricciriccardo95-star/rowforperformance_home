@@ -171,10 +171,10 @@
            (quella davanti piu' grande e luminosa, quella dietro piu' piccola e scura).
            Stessa animazione, sfasata di mezzo giro. */
         .deck{
-          display:none;justify-self:center;position:relative;width:380px;height:340px;
-          perspective:1100px;--r:100px;--card:220px;
+          display:block;justify-self:center;position:relative;width:260px;height:230px;
+          perspective:900px;--r:62px;--card:140px;
         }
-        @media(min-width:900px){.deck{display:block}}
+        @media(min-width:900px){.deck{width:380px;height:340px;perspective:1100px;--r:100px;--card:220px}}
         .deck .orbit{position:absolute;inset:0;transform-style:preserve-3d;animation:galleggia 6s ease-in-out infinite}
         .deck img{
           position:absolute;left:50%;top:50%;width:var(--card);height:var(--card);
